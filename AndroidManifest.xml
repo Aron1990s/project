@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.wxyx.ygkc2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <!-- 手机扫描二维码权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_web"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- key:开发者申请的key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="NTGSifem7Be7Ye1XH8rM7uj4" />
+        <!-- 登陆界面 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 设备查询功能 configChanges属性用于设置屏幕切换时不更新界面 -->
+        <activity
+            android:name=".ui.QueryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.RepairActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.TrackRepair"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.CommentRepair"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.SignActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 工作列表 -->
+        <activity
+            android:name=".tree.WorkListNewTwo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.WorkListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cn.wxyx.ygkc2.tree.view.WMainActivity"
+            android:label="@string/app_name" >
+        </activity>
+		<activity
+            android:name="com.example.reminderdemo.CallMainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/Transparent">
+        </activity>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 扫描二维码功能界面 -->
+        <activity
+            android:name=".ui.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+         <receiver android:name="com.example.reminderdemo.MyReceiver" >
+            <intent-filter>
+                <action android:name="com.example.reminderdemo.MyReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.reminderdemo.MyAlarm"
+            android:process=":remote" >
+        </activity>
+        <activity
+            android:name="com.example.reminderdemo.NotificationActivity"
+            android:launchMode="singleTask" 
+            android:label="@string/app_name"
+            android:theme="@style/Transparent" >
+        </activity>
+
+        <service android:name="Call" >
+            <intent-filter>
+                <action android:name="ymw.MY_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+    
+    <!-- 配置安卓的全局变量 -->
+
+</manifest>

@@ -1,0 +1,12 @@
+     本项目为怡海阳光客户端。
+     项目主要界面及其功能实现主要在package-cn.wxyx.ygkc2.ui中。
+  package-cn.wxyx.common 主要提供URL设置，可忽略；
+  package-cn.wxyx.ygkc2 提供User类的设置及获取，可忽略；
+  package-cn.wxyx.ygkc2.bean, cn.wxyx.ygkc2.bean.base 提供向服务器发送的封装对象；
+  package-cn.wxyx.ygkc2.connToServe 为子线程，用于联系服务器；
+  package-cn.wxyx.ygkc2.service, cn.wxyx.ygkc2.service.impl 提供了向服务器发送、获得数据的各个方法；
+  package-cn.wxyx.ygkc2.tree.bean, cn.wxyx.ygkc2.tree.beanforlist, cn.wxyx.ygkc2.tree.beanforlist
+, cn.wxyx.ygkc2.tree.view 实现了主界面中所需要的4层列表。
+  package-com.example.reminderdemo 为上述4层列表所需的打电话以及间隔提醒功能；
+  package-com.mining.app.zxing.camera，com.mining.app.zxing.decoding，com.mining.app.zxing.view 为二维码
+扫描所需的包，无需改动。

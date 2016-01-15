@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SunShine Service</string>
+    <string name="enroll">Mobile Terminal Services System</string>
+    <string name="title">Mobile Terminal Services System</string>
+    <string name="engineerNum">工程师编号:&#160;</string>
+    <string name="engineerLevel">工程师级别:&#160;</string>
+    <string name="workAge">工作年限:&#160;&#160;&#032;&#160;</string>
+    <string name="leave">前期遗留</string>
+    <string name="monthFinish">MonCom</string>
+    <string name="todaySurplus">DayLeft</string>
+    <string name="todayFinish">DayCom</string>
+    <string name="message">即时消息:</string>
+    <string name="signIn">Attend</string>
+    <string name="work">SendTask</string>
+    <string name="query">EquipInquiry</string>
+    <string name="trackTitle">RepairTrack</string>
+    <string name="contact">联系客户</string>
+    <string name="customerName">客户姓名:</string>
+    <string name="cpuNum">设备型号:</string>
+    <string name="cpuConfig">硬件配置:</string>
+    <string name="serviceTime">服务期限:</string>
+    <string name="contactName">联系姓名:</string>
+    <string name="contactNum">联系电话:</string>
+    <string name="gatContent">详细维修内容:</string>
+    <string name="wrongPlace">故障现象:</string>
+    <string name="startWork">上班打卡</string>
+    <string name="endWork">下班打卡</string>
+    <string name="remark">备注:</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="login">Login</string>
+    <string name="userName">Username :&#160;</string>
+    <string name="passWord">Password :&#160;</string>
+    <string name="hintForUser">PlzEnter&#046;&#046;&#046;</string>
+    <string name="loginfail">登录失败</string>
+	<string name="repairTime">上门时间:&#160;&#032;&#160;&#032;</string>
+	<string name="engineerName">工程师姓名:</string>
+	<string name="numForEngineer">工程师电话:</string>
+	<string name="picture">照片:</string>
+	<string name="repairContent">维修内容:</string>
+
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/white">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="15dp"
+        android:text="@string/query"
+        android:textSize="25sp"
+        android:textColor="#000000"  />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Scan" 
+        android:textSize="15dp"
+        android:background="@drawable/bg_alibuybutton_selected"
+        android:textColor="@drawable/white"/>
+   
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customerName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textForCustomerName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp" 
+            android:singleLine="true"  
+			android:ellipsize="marquee" 
+			android:focusable="true"
+			android:focusableInTouchMode="true" 		 
+			android:marqueeRepeatLimit="marquee_forever"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/equName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpuNum"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textForequName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp"
+            android:singleLine="true"  
+			android:ellipsize="marquee" 
+			android:focusable="true"
+			android:focusableInTouchMode="true" 		 
+			android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/equConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpuConfig"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textForequConfig"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp"
+            android:singleLine="true"  
+			android:ellipsize="marquee" 
+			android:focusable="true"
+			android:focusableInTouchMode="true" 		 
+			android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/equService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serviceTime"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textForequService"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp"
+            android:singleLine="true"  
+			android:ellipsize="marquee" 
+			android:focusable="true"
+			android:focusableInTouchMode="true" 		 
+			android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactName"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editForContact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:hint="@string/hintForUser"
+            android:inputType="text"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/contactNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactNum"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editForContactNum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:hint="@string/hintForUser"
+            android:inputType="text"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gatContent"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/gatContextTx"
+        android:layout_width="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:background="@drawable/bg_edittext_normal"
+        android:hint="@string/hintForUser"
+        android:gravity="left"
+        android:layout_gravity="center">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="end"
+        android:text="提交" 
+        android:textSize="15dp"
+        android:background="@drawable/bg_alibuybutton_selected"
+        android:textColor="@drawable/white"/>
+
+</LinearLayout>

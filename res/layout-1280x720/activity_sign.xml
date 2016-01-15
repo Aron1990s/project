@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/white">
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="50sp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/signRemark"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:ems="10" 
+            android:gravity="start"
+            android:background="@drawable/bg_edittext">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="15dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/startWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/startWork"
+            android:background="@drawable/bg_alibuybutton_selected"
+            android:textColor="@drawable/white" 
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="@string/endWork"
+            android:background="@drawable/bg_alibuybutton_selected" 
+            android:textColor="@drawable/white"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>
